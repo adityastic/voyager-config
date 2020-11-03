@@ -13,13 +13,13 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Adityastic\\VoyagerConfig\\": "src"
+            "MadeByBob\\VoyagerConfig\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Adityastic\\VoyagerConfig\\VoyagerConfigServiceProvider"
+                "MadeByBob\\VoyagerConfig\\VoyagerConfigServiceProvider"
             ]
         }
     }
