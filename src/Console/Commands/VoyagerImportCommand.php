@@ -66,11 +66,11 @@ class VoyagerImportCommand extends Command
             $conf_entries = $this->getConfigurationEntries($table);
 
             // check valid config entries 
-            if (empty($conf_entries)) {
-                $this->info("DB changes are reverted.");
-                // stop importing configuration.
-                return;
-            }
+//             if (empty($conf_entries)) {
+//                 $this->info("DB changes are reverted.");
+//                 // stop importing configuration.
+//                 return;
+//             }
 
             // execute insert on successful parsing
             DB::table($table)->insertOrIgnore( $conf_entries );
