@@ -51,7 +51,7 @@ class VoyagerExportCommand extends Command
         foreach($tables as $table) {
             if(!$this->checkTable($table)) continue;
 
-            if(!$this->requestConfirmation($table)) continue;
+//             if(!$this->requestConfirmation($table)) continue;
 
             VoyagerExport::forTable($table);
             
